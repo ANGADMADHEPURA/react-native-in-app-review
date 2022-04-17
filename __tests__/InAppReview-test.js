@@ -27,6 +27,7 @@ jest.mock('react-native/Libraries/Utilities/Platform', () => {
 
 jest.mock('react-native/Libraries/BatchedBridge/NativeModules', () => {
   let _NativeModules = {};
+  
 
   _NativeModules = {
     InAppReviewModule: {show: jest.fn(), showInAppCommentHMS: jest.fn()},
